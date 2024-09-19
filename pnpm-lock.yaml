@@ -18,7 +18,7 @@ importers:
         specifier: ^5.4.5
         version: 5.6.2
 
-  apps/docs:
+  apps/client:
     dependencies:
       '@repo/ui':
         specifier: workspace:*
@@ -58,20 +58,7 @@ importers:
         specifier: ^5
         version: 5.6.2
 
-  apps/web:
-    dependencies:
-      '@repo/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
-      next:
-        specifier: 14.2.6
-        version: 14.2.6(react-dom@18.3.1)(react@18.3.1)
-      react:
-        specifier: 18.3.1
-        version: 18.3.1
-      react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+  apps/server:
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
@@ -79,23 +66,11 @@ importers:
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
-      '@types/node':
-        specifier: ^20
-        version: 20.16.5
-      '@types/react':
-        specifier: ^18
-        version: 18.3.7
-      '@types/react-dom':
-        specifier: ^18
-        version: 18.3.0
       eslint:
         specifier: ^8
         version: 8.57.1
-      eslint-config-next:
-        specifier: 14.2.6
-        version: 14.2.6(eslint@8.57.1)(typescript@5.6.2)
       typescript:
-        specifier: ^5
+        specifier: ^5.6.2
         version: 5.6.2
 
   packages/eslint-config:

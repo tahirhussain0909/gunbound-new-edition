@@ -1,5 +1,5 @@
 {
-  "extends": "@repo/typescript-config/nextjs.json",
+  "extends": "@gunbound/typescript-config/nextjs.json",
   "compilerOptions": {
     "plugins": [
       {
@@ -7,7 +7,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@src/*": ["../../packages/ui/src/*"],
+      "@algorhythm/ui/*": ["../../packages/ui/src/*"],
     }
   },
   "include": [

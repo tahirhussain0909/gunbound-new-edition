@@ -1,5 +1,5 @@
 {
-  "name": "gunbound-new-edition",
+  "name": "gunbound",
   "private": true,
   "scripts": {
     "build": "turbo build",

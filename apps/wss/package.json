@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": "true",
   "scripts": {
-    "dev": "rm -rf dist && tsc -b && node dist/index",
+    "dev": "rm -rf dist && pnpm build && pnpm start",
     "build": "tsc -b",
-    "start": "node dist/index"
+    "start": "node dist/index.js"
   },
   "devDependencies": {
     "@gunbound/eslint-config": "workspace:*",
@@ -13,11 +13,14 @@
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
     "@types/node": "^22.5.5",
+    "@types/ws": "^8.5.12",
     "eslint": "^8",
     "typescript": "^5.6.2"
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.21.0"
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "ws": "^8.18.0"
   }
 }
